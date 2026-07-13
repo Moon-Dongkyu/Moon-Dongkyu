@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
+  <title id="title">Dongkyu Moon, AI Researcher</title>
+  <desc id="desc">A clean dark profile banner with a friendly orbit mascot and professional AI systems introduction.</desc>
+  <defs>
+    <linearGradient id="canvas" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#080B12"/>
+      <stop offset="0.55" stop-color="#0B1020"/>
+      <stop offset="1" stop-color="#10182B"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8AB4F8">
+        <animate attributeName="stop-color" values="#8AB4F8;#B7A5FF;#8AB4F8" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="0.5" stop-color="#81C995">
+        <animate attributeName="stop-color" values="#81C995;#78D9EC;#81C995" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="1" stop-color="#FDD663">
+        <animate attributeName="stop-color" values="#FDD663;#F28B82;#FDD663" dur="8s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <radialGradient id="orb" cx="32%" cy="24%" r="78%">
+      <stop offset="0" stop-color="#F8FAFF"/>
+      <stop offset="0.18" stop-color="#C9DCFF"/>
+      <stop offset="0.58" stop-color="#7BA7F5"/>
+      <stop offset="1" stop-color="#665CF6"/>
+    </radialGradient>
+    <radialGradient id="blueGlow">
+      <stop offset="0" stop-color="#4285F4" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#4285F4" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="greenGlow">
+      <stop offset="0" stop-color="#34A853" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#34A853" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#F8FAFC" opacity="0.055"/>
+    </pattern>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#000000" flood-opacity="0.38"/>
+    </filter>
+    <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="frame"><rect x="1" y="1" width="1198" height="428" rx="32"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="430" fill="url(#canvas)"/>
+    <rect width="1200" height="430" fill="url(#dots)"/>
+    <circle cx="1090" cy="20" r="300" fill="url(#blueGlow)">
+      <animate attributeName="cx" values="1090;1010;1090" dur="12s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="330" cy="440" r="260" fill="url(#greenGlow)">
+      <animate attributeName="cy" values="440;390;440" dur="10s" repeatCount="indefinite"/>
+    </circle>
+
+    <rect x="42" y="38" width="340" height="354" rx="28" fill="#121827" fill-opacity="0.82" stroke="#FFFFFF" stroke-opacity="0.10" filter="url(#shadow)"/>
+    <rect x="61" y="57" width="82" height="28" rx="14" fill="#1C2535"/>
+    <circle cx="78" cy="71" r="4" fill="#81C995">
+      <animate attributeName="r" values="4;5.5;4" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="91" y="75" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12" font-weight="650" fill="#A9B4C6">ONLINE</text>
+
+    <g transform="translate(0 0)">
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -7;0 0" dur="5.8s" repeatCount="indefinite"/>
+      <circle cx="212" cy="218" r="92" fill="#7BA7F5" opacity="0.24" filter="url(#softGlow)">
+        <animate attributeName="opacity" values="0.18;0.36;0.18" dur="4s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="212" cy="218" r="74" fill="url(#orb)" filter="url(#shadow)"/>
+      <ellipse cx="187" cy="207" rx="7" ry="9" fill="#101938"/>
+      <ellipse cx="237" cy="207" rx="7" ry="9" fill="#101938"/>
+      <circle cx="184" cy="204" r="2.2" fill="#FFFFFF"/>
+      <circle cx="234" cy="204" r="2.2" fill="#FFFFFF"/>
+      <path d="M190 235 Q212 252 234 235" fill="none" stroke="#101938" stroke-width="5" stroke-linecap="round"/>
+      <ellipse cx="212" cy="218" rx="116" ry="48" fill="none" stroke="#8AB4F8" stroke-opacity="0.42" stroke-width="2" stroke-dasharray="4 8" transform="rotate(-18 212 218)"/>
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="0 212 218" to="360 212 218" dur="13s" repeatCount="indefinite"/>
+        <circle cx="104" cy="260" r="8" fill="#F28B82"/>
+        <circle cx="318" cy="175" r="7" fill="#FDD663"/>
+        <circle cx="196" cy="101" r="6" fill="#81C995"/>
+      </g>
+    </g>
+
+    <text x="64" y="357" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13" letter-spacing="2.2" fill="#8D99AB">MOON / RESEARCH ENGINEER</text>
+
+    <g transform="translate(430 0)">
+      <rect x="0" y="56" width="246" height="28" rx="14" fill="#14223C" stroke="#8AB4F8" stroke-opacity="0.24"/>
+      <text x="18" y="75" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12" font-weight="700" letter-spacing="1.1" fill="#8AB4F8">DAEKYOCNS · R&amp;D CENTER</text>
+      <text x="0" y="156" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="64" font-weight="760" letter-spacing="-2.5" fill="#F8FAFC">Dongkyu Moon</text>
+      <text x="2" y="201" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="22" font-weight="560" fill="#D9E2F0">Research Engineer · Vision &amp; Language AI · Full-Stack R&amp;D</text>
+      <text x="2" y="243" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="17" fill="#97A6BA">Building AI services for Tugboat, Luxplorer, and NexVi.</text>
+      <rect x="2" y="270" width="676" height="1" fill="#FFFFFF" opacity="0.10"/>
+
+      <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="14" font-weight="600">
+        <rect x="2" y="298" width="116" height="38" rx="19" fill="#121A29" stroke="#FFFFFF" stroke-opacity="0.11"/>
+        <text x="26" y="322" fill="#D7E0ED">Tugboat</text>
+        <rect x="128" y="298" width="130" height="38" rx="19" fill="#121A29" stroke="#FFFFFF" stroke-opacity="0.11"/>
+        <text x="153" y="322" fill="#D7E0ED">Luxplorer</text>
+        <rect x="268" y="298" width="136" height="38" rx="19" fill="#121A29" stroke="#FFFFFF" stroke-opacity="0.11"/>
+        <text x="307" y="322" fill="#D7E0ED">NexVi</text>
+        <rect x="414" y="298" width="104" height="38" rx="19" fill="#121A29" stroke="#FFFFFF" stroke-opacity="0.11"/>
+        <text x="426" y="322" fill="#D7E0ED">AI Award</text>
+      </g>
+
+      <text x="2" y="377" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13" letter-spacing="0.9" fill="#8D99AB">research  →  data  →  model  →  service  →  impact</text>
+      <rect x="542" y="365" width="8" height="15" rx="2" fill="url(#accent)">
+        <animate attributeName="opacity" values="1;0.18;1" dur="1.15s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+    <rect x="1" y="1" width="1198" height="428" rx="32" fill="none" stroke="url(#accent)" stroke-opacity="0.34" stroke-width="2">
+      <animate attributeName="stroke-opacity" values="0.22;0.52;0.22" dur="6s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>
